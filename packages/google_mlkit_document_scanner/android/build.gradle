@@ -21,6 +21,10 @@ rootProject.allprojects {
 
 apply plugin: "com.android.library"
 
+if (project.findProperty("android.builtInKotlin")?.toString() == "false") {
+    apply plugin: "kotlin-android"
+}
+
 kotlin {
     compilerOptions {
         jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11

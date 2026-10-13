@@ -11,7 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_mlkit_commons: ^0.13.0
+  google_mlkit_commons:
+    path: ../google_mlkit_commons
 
 dev_dependencies:
   flutter_test:
@@ -23,6 +24,4 @@ flutter:
     platforms:
       android:
         package: com.google_mlkit_text_recognition
-        pluginClass: GoogleMlKitTextRecognitionPlugin
-      ios:
         pluginClass: GoogleMlKitTextRecognitionPlugin
